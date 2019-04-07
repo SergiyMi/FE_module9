@@ -1,0 +1,175 @@
+@import url("/FE_module8/css/fonts.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* =======================header============================== */
+.container-fluid {
+  min-height: 540px;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.navigation {
+  margin-bottom: 118px;
+}
+
+.header-text {
+  font-size: 14px;
+  font-family: "Montserrat", serif;
+  text-decoration: none !important;
+  border: solid 2px rgba(26, 25, 21, 0);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.header-text:hover,
+.header-text:focus {
+  border-color: rgb(255, 255, 255);
+}
+
+.logo {
+  font-size: 20px;
+  font-family: "Montserrat", serif;
+  text-decoration: none !important;
+}
+
+.header-title {
+  font-size: 30px;
+  font-family: "Montserrat", serif;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  font-family: "Roboto", serif;
+}
+
+.btn {
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Montserrat", serif;
+}
+
+.btn-red {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 78, 80);
+}
+
+.btn-red:hover,
+.btn-red:focus {
+  background-color: #fff;
+  border-color: rgb(255, 78, 80);
+  color: rgb(255, 78, 80);
+}
+
+/* =============================main============================ */
+
+.main-title {
+  font-size: 22px;
+  font-family: "Montserrat", serif;
+}
+
+.image {
+  transform: translateX(20%);
+}
+
+.icon {
+  transform: translate(-10px, 5px);
+  background-color: #fff;
+  border: solid 4px #fff;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.img-name {
+  font-size: 14px;
+  font-family: "Montserrat", serif;
+}
+
+.img-text {
+  font-size: 14px;
+  font-family: "Roboto", serif;
+}
+
+.img-text-lucas {
+  line-height: 1.4;
+}
+
+.card-change:hover .image-change {
+  display: none;
+}
+
+.card-change:hover .card-hover {
+  display: flex;
+  transform: translateX(20%);
+}
+
+.card-hover {
+  display: none;
+}
+
+.btn-white {
+  color: rgb(255, 78, 80);
+  border: solid 2px rgb(255, 78, 80);
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background-color: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
+}
+
+/* ========================media 748px===================================== */
+
+@media (min-width: 748px) and (max-width: 938px) {
+  .container-fluid {
+    min-height: 700px;
+    background-image: url(../images/header-bg-tablet.jpg);
+  }
+
+  .container {
+    min-height: 700px;
+    max-width: 768px;
+  }
+
+  .header-title {
+    font-size: 52px;
+  }
+
+  .header-subtitle {
+    font-size: 24px;
+  }
+}
+
+/* ========================media 940px===================================== */
+
+@media (min-width: 940px) {
+  .container-fluid {
+    min-height: 700px;
+    background-image: url(../images/header-bg-desktop.jpg);
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+
+  .header-title {
+    font-size: 52px;
+  }
+
+  .header-subtitle {
+    font-size: 24px;
+  }
+}
